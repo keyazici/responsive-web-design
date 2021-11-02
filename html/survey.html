@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link href="../css/survey.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Just a random form</p>
+      <form id="survey-form" class="survey-form">
+        <label for="name" id="name-label"> Name </label>
+        <input type="text" name="name" id="name" placeholder="Name" required />
+        <label for="email" id="email-label"> Email </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <label for="number" id="number-label"> Age </label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="18"
+          max="118"
+          placeholder="Age"
+        />
+        <label for="dropdown">Favorite pet</label>
+        <select id="dropdown">
+          <option value="">-Choose-</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="parrot">Parrot</option>
+        </select>
+        <fieldset>
+          <legend>Choose a drink</legend>
+          <input type="radio" id="water" name="drink" value="water" />
+          <label for="water">Water</label>
+          <input type="radio" id="coffee" name="drink" value="coffee" />
+          <label for="coffee">Coffee</label>
+          <input type="radio" id="tea" name="drink" value="tea" />
+          <label for="tea">Tea</label>
+          <input type="radio" id="soda" name="drink" value="soda" />
+          <label for="soda">Soda</label>
+        </fieldset>
+        <input type="checkbox" id="meal" value="meal" />
+        <label for="meal">Meal</label>
+        <input type="checkbox" id="dance" value="dance" />
+        <label for="dance">Dance</label>
+        <input type="checkbox" id="party" value="party" />
+        <label for="party">Party</label>
+        <label for="comments">Additional Comments</label>
+        <textarea id="comments" placeholder="Additional comments"></textarea>
+        <input type="submit" id="submit" />
+      </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

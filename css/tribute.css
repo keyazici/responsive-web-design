@@ -1,0 +1,23 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100px;
+  flex-grow: 2;
+}
+
+@media (min-width: 600px) {
+  .image {
+    max-width: 200px;
+  }
+}
